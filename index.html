@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Yandex test</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Golos+Text:wght@400..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <div class="container">
+          <img class="logo" src="img/logo.png" alt="logo" />
+          <div class="intro">
+            <div class="intro__title">
+              <h1>Превратите уездный город</h1>
+              <p>в столицу</p>
+              <p>земного шара</p>
+            </div>
+            <p>
+              Оплатите взнос на телеграммы для организации Международного
+              васюкинского турнира по шахматам
+            </p>
+            <div class="intro__buttons">
+              <button onclick="document.location='#annonce'">
+                Поддержать шахматную мысль
+              </button>
+              <button onclick="document.location='#schedule'">
+                Подробнее о турнире
+              </button>
+            </div>
+          </div>
+        </div>
+        <!--running line-->
+        <div class="marquee">
+          <div class="marquee__line">
+            <div class="marquee__text">
+              <p>Дело помощи утопающим — дело рук самих утопающих!</p>
+              <div class="marquee__dot"></div>
+              <p>Шахматы двигают вперед не только культуру, но и экономику!</p>
+              <div class="marquee__dot"></div>
+              <p>Лед тронулся, господа присяжные заседатели!</p>
+              <div class="marquee__dot"></div>
+            </div>
+            <!-- please see index.js -->
+          </div>
+        </div>
+      </header>
+      <main>
+        <div class="container">
+          <div class="annonce" id="annonce">
+            <div class="annonce__first">
+              <div class="annonce__text">
+                <span>Чтобы поддержать Международный васюкинский турнир</span>
+                <img class="annonce__photo1" src="img/photo1.png" alt="photo" />
+                <span>посетите лекцию на тему:</span>
+                <strong class="annonce__text_red"
+                  >«Плодотворная дебютная идея»
+                </strong>
+              </div>
+            </div>
+            <div class="annonce__second">
+              <img class="annonce__photo2" src="img/group.png" alt="" />
+              <div class="annonce__schedule">
+                <div class="annonce__text">
+                  <span>и сеанс</span>
+                  <strong class="annonce__text_red"
+                    >одновременной игры в шахматы на 160 досках</strong
+                  >
+                  <span>гроссмейстера О. Бендера</span>
+                </div>
+                <div class="schedule" id="schedule">
+                  <div><p>Место проведения:</p></div>
+                  <div><p>Клуб «Картонажник»</p></div>
+                  <div><p>Дата и время мероприятия:</p></div>
+                  <div><p>22 июня 1927 г. в 18:00</p></div>
+                  <div><p>Стоимость входных билетов:</p></div>
+                  <div><p>20 коп.</p></div>
+                  <div><p>Плата за игру:</p></div>
+                  <div><p>50 коп.</p></div>
+                  <div><p>Взнос на телеграммы:</p></div>
+                  <div>
+                    <p><span>100 руб.</span> &nbsp;21 руб. 16 коп.</p>
+                  </div>
+                </div>
+                <p class="notice">
+                  По всем вопросам обращаться в администрацию к К. Михельсону
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="phases">
+            <div class="phases__title">
+              <h2>Этапы преображения Васюков</h2>
+              <p>Будущие источники обогащения васюкинцев</p>
+            </div>
+            <div class="phases__cards">
+              <div class="phases__card">
+                <div class="number">1</div>
+                <p>Строительство железнодорожной магистрали Москва-Васюки</p>
+              </div>
+              <div class="phases__card">
+                <div class="number">2</div>
+                <p>
+                  Открытие фешенебельной гостиницы «Проходная пешка» и других
+                  небоскрёбов
+                </p>
+              </div>
+              <div class="phases__card">
+                <div class="number">3</div>
+                <p>
+                  Поднятие сельского хозяйства в радиусе на тысячу километров:
+                  производство овощей, фруктов, икры, шоколадных конфет
+                </p>
+              </div>
+              <div class="phases__card">
+                <div class="number">4</div>
+                <p>Строительство дворца для турнира</p>
+              </div>
+              <div class="phases__card">
+                <div class="number">5</div>
+                <p>Размещение гаражей для гостевого автотранспорта</p>
+              </div>
+              <div class="phases__card">
+                <div class="number">6</div>
+                <p>
+                  Постройка сверхмощной радиостанции для передачи всему миру
+                  сенсационных результатов
+                </p>
+              </div>
+              <div class="phases__card">
+                <div class="number">7</div>
+                <p>
+                  Создание аэропорта «Большие Васюки» с регулярным отправлением
+                  почтовых самолётов и дирижаблей во все концы света, включая
+                  Лос-Анжелос и Мельбурн
+                </p>
+              </div>
+            </div>
+            <div class="phases__arrows">
+              <button class="phases__prev">
+                <img src="img/left.svg" alt="left arrow" />
+              </button>
+              <div class="">
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
+                <span class="dot" onclick="currentSlide(4)"></span>
+                <span class="dot" onclick="currentSlide(5)"></span>
+              </div>
+              <button class="phases__next">
+                <img src="img/right.svg" alt="right arrow" />
+              </button>
+            </div>
+            <img class="plane" src="img/plane.png" alt="" />
+          </div>
+          <div class="players">
+            <h2 class="players__title">Участники турнира</h2>
+            <div class="players__cards">
+              <!-- please see index.js -->
+            </div>
+            <div class="players__arrows">
+              <button class="players__prev">
+                <img src="img/left.svg" alt="left arrow" />
+              </button>
+              <div class="">
+                <span>3</span>
+                <span>/</span>
+                <span>6</span>
+              </div>
+              <button class="players__next">
+                <img src="img/right.svg" alt="right arrow" />
+              </button>
+            </div>
+          </div>
+        </div>
+      </main>
+      <footer>
+        <!--running line-->
+        <div class="marquee">
+          <!-- please index.js -->
+        </div>
+        <div class="footer">
+          <div class="container">
+            <p>
+              Все персонажи, события и цитаты являются вымышленными
+              и не принадлежат создателям сайта. С подробностями можно
+              познакомиться в главе XXXIV романа Ильи Ильфа и Евгения Петрова
+              «Двенадцать стульев».
+            </p>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>
