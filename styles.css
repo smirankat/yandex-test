@@ -389,25 +389,22 @@ header {
   margin: 60px 0 139px;
 }
 @-webkit-keyframes ani {
-  0%,
-  25% {
+  0% {
     -webkit-transform: translateX(0);
     transform: translateX(0);
     opacity: 1;
   }
-  25%,
-  50% {
+  50%,
+  85% {
     -webkit-transform: translateX(-100%);
     transform: translateX(-100%);
     opacity: 0;
   }
-  50%,
-  75% {
+  85% {
     -webkit-transform: translateX(100%);
     transform: translateX(100%);
     opacity: 0;
   }
-  75%,
   100% {
     -webkit-transform: translateX(0);
     transform: translateX(0);
@@ -415,25 +412,22 @@ header {
   }
 }
 @keyframes ani {
-  0%,
-  25% {
+  0% {
     -webkit-transform: translateX(0);
     transform: translateX(0);
     opacity: 1;
   }
-  25%,
-  50% {
+  50%,
+  85% {
     -webkit-transform: translateX(-100%);
     transform: translateX(-100%);
     opacity: 0;
   }
-  50%,
-  75% {
+  85% {
     -webkit-transform: translateX(100%);
     transform: translateX(100%);
     opacity: 0;
   }
-  75%,
   100% {
     -webkit-transform: translateX(0);
     transform: translateX(0);
@@ -456,8 +450,8 @@ header {
   align-items: center;
   text-align: center;
   margin: 0 clamp(10px, 10px + 27 * (100vw - 767px) / 599, 37px);
-  -webkit-animation: ani 0.2s;
-  animation: ani 0.2s;
+  -webkit-animation: ani 0.8s;
+  animation: ani 0.8s;
 }
 .players__card p:nth-child(2) {
   font-family: "Golos Text";
@@ -488,7 +482,7 @@ header {
 }
 .players__arrows {
   position: absolute;
-  left: clamp(500px, 500px + 572 * (100vw - 767px) / 599, 1072px);
+  left: clamp(500px, 500px + 570 * (100vw - 767px) / 599, 1070px);
   top: 10px;
   width: clamp(129px, 129px + 24 * (100vw - 767px) / 599, 153px);
   display: -webkit-box;
