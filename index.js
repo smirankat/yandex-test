@@ -60,7 +60,11 @@ function currentSlide(n) {
   activeDot(n);
   disableButton();
 }
-
+window.addEventListener("resize", function () {
+  if (window.innerWidth > 767) {
+    phaseSlides.style.marginLeft = "0px";
+  }
+});
 // players slider
 const prevBtn = document.querySelector(".players__prev");
 const nextBtn = document.querySelector(".players__next");
